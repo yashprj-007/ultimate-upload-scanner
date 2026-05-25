@@ -17,6 +17,6 @@ Supports polyglot payloads, CSRF, PUT method, hex editing, obfuscation, and auto
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/yourusername/ultimate-upload-scanner.git
+git clone https://github.com/yashprj-007/ultimate-upload-scanner.git
 cd ultimate-upload-scanner
 pip install -r requirements.txt
